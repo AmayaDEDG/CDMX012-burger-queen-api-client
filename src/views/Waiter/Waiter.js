@@ -2,17 +2,16 @@
 import { useState, useEffect } from 'react';
 import styles from './Waiter.module.css';
 import Header from '../Administrator/products/Header'
-import { BsFillPlusCircleFill } from 'react-icons/bs'
-import { AiFillMinusCircle } from 'react-icons/ai'
 import { useNavigate } from "react-router-dom";
+import Plus from '../../Components/images/Plus.svg';
+import menos from '../../Components/images/menos.svg';
 
 const Waiter = ({ logOut }) => {
   const navigate = useNavigate();
 
   const [category, setCategory] = useState('Desayuno');
   const [products, setProducts] = useState([]);
-  const [count, setCount] = useState(0)
-  const [orderItems, setOrderItems] = useState([])
+  // const [count, setCount] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3001/productos')
@@ -28,50 +27,51 @@ const Waiter = ({ logOut }) => {
     setCategory(e.target.value)
   };
 
-  const handleCount = ({ target: { name, value } }) => {
+  // const handleCount = ({ target: { name, value } }) => {
 
-  }
+  // }
 
 
 
   return (
-    <article className='Waiter'>
+    <>
       <Header view={'Status'} logOut={logOut} route={'/Status'} />
       <section className={styles.wElements}>
         <select className={styles.waiterSelect} name='category' id='category' value={category} onChange={handleCategory}>
           <option value='Desayuno'>Desayuno</option>
           <option value='Comida'>Comida</option>
         </select>
-        <div className={`table-responsive product-list ${styles.waiterTable}`} >
-          <table className='table table-bordered'>
-            <thead>
-              <tr>
-                <th className='bla'>ítem</th>
-                <th className='bla'>Precio</th>
-                <th className='bla'>Cantidad</th>
-              </tr>
-            </thead>
-            <tbody>
-              {products && products.filter(product => product.category === category).map((product) => (
-                <tr key={product.id} >
-                  <td className='ble' >
-                    <img alt={product.name} src={product.img} className={styles.imgs} /><br />
-                    {product.name}
-                  </td>
-                  <td className='ble'>{product.price}</td>
-                  <td className='ble'><AiFillMinusCircle color='#DFAD19' fontSize='300%' />  {count}  <BsFillPlusCircleFill color='#F645D4' fontSize='300%' /></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <br />
+        <article className={styles.menuTable}>
+          <section className={styles.HeaderTable}>
+            <h5>Ítem</h5>
+            <h5>Precio</h5>
+            <h5>Cantidad</h5>
+          </section>
+          {products && products.filter(product => product.category === category).map((product) => (
+            <div className={styles.menu} key={product.id}>
+              <section className={styles.item}>
+                <img src={product.img} alt='comida' />
+                <h5>{product.name}</h5>
+              </section>
+              <section className={styles.price}>
+                <h5>{product.price}</h5>
+              </section>
+              <section className={styles.comanda}>
+                <button><img src={menos} alt='ícono de menos' /></button>
+                <h5>0</h5>
+                <button><img src={Plus} alt='ícono de más' /></button>
+              </section>
+            </div>))}
+        </article>
+        <br />
         {/* <button>Cancelar</button> */}
         <button className={styles.button} onClick={() => navigate('/Order')}>
           Resumen
         </button>
       </section>
 
-    </article>
+    </>
   );
 }
 

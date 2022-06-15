@@ -10,11 +10,11 @@ const Waiter = ({ logOut }) => {
    <>
     <Header view={'Status'} logOut={logOut} route={'/Status'} />
             
-     <div className='HeaderTable'>
+     <section className='HeaderTable'>
      <h5>Ítem</h5>
      <h5>Precio</h5>
      <h5>Cantidad</h5>
-     </div>
+     </section>
      <Menu/>
    </>
   );

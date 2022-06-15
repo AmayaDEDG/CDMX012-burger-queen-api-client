@@ -104,5 +104,47 @@
       "type": "Extra",
       "category": "Comida"
     }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "order": {
+        "name": "algo1",
+        "price": "algo1",
+        "quantity": "algo1"
+      },
+      "customer": "bob", 
+      "status": "waiting"
+    },
+    {
+      "id": 2,
+      "order": {
+        "name": "algo2",
+        "price": "algo2",
+        "quantity": "algo2"
+      },
+      "customer": "bob2", 
+      "status": "ready"
+    },
+    {
+      "id": 3,
+      "order": {
+        "name": "algo3",
+        "price": "algo3",
+        "quantity": "algo3"
+      },
+      "customer": "bob3", 
+      "status": "done"
+    },
+    {
+      "id": 4,
+      "order": {
+        "name": "algo4",
+        "price": "algo4",
+        "quantity": "algo4"
+      },
+      "customer": "bob3", 
+      "status": "ready"
+    }
   ]
 }
