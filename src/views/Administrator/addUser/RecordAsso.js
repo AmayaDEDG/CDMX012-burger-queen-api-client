@@ -1,5 +1,5 @@
 import icoBurgerQueen from '../../../Components/images/icoBurgerQueen.svg';
-// import React  from 'react';
+import React  from 'react';
 import back from '../../../Components/images/back.svg'
 import '../addUser/recordAsso.css';
 import { auth } from '../../../lib/firebaseAuth';
@@ -21,6 +21,7 @@ export const RecordAsso = () => {
 
   async function registerAssociate(email, password, name, age, phone, date, contEmergency, contract, time, job) {
 
+    const originalUser = auth.currentUser;
 
     const dataAssociate = await createUserWithEmailAndPassword(
       auth,
@@ -71,8 +72,8 @@ export const RecordAsso = () => {
     <section className='RecordAsso'>
       <div className='header'>
 
-        <img src={icoBurgerQueen} alt='Burger Queen' id='icoBurgerQueen' />
-        <button id='back' onClick={partners}><img src={back} alt='Volver' id='backImg' /></button>
+             <img src={icoBurgerQueen} alt='Burger Queen Logo' id='icoBurgerQueen'/>
+             <button id='back' onClick={partners}><img src={back} alt='Volver' id='backImg'/></button>
 
       </div>
       <h3>Alta de Asociado</h3>

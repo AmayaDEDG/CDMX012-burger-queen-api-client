@@ -4,7 +4,7 @@ import './sweetAlert.css';
 import AppRouter from './routers/AppRouter';
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 
-function App() {
+  function App() {
   const [isAuth, setIsAuth] = useState(null)
   const auth = getAuth();
 
