@@ -92,6 +92,14 @@ p.p-login {
     font-weight: bolder;
 }
 
+.bigger {
+    font-size: x-large;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
 /* @media only screen   
 and (min-width: 1370px)  
 and (max-width: 1605px)   {

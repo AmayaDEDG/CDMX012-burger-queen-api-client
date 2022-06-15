@@ -100,11 +100,9 @@ export const EditDeleteAsso = () => {
                <select id='job' onChange ={ (event) =>  {
                    actualizarValor({ ...valor, job: event.target.value })}} >
                     <option value={valor.job}>{valor.job}</option>
-                    <option value="Jefe de Cocina">Jefe de Cocina</option>
+                    <option value="Jefe de Cocina">Gerente</option>
                     <option value="Cocinero">Cocinero</option>
-                    <option value="Jefe de Meseros">Jefe de Meseros</option>
                     <option value="Mesero">Mesero</option>
-                    <option value="Limpieza">Limpieza</option>
                 </select>
                              
                 <label className='labelAge'>Edad</label>

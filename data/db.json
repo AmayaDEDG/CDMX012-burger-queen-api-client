@@ -98,17 +98,9 @@
     },
     {
       "name": "Helado de fresa",
-      "price": "$5.00",
+      "price": "$10.00",
       "id": 13,
       "img": "https://images2.imgbox.com/4a/75/vcmtmL4m_o.png",
-      "type": "Extra",
-      "category": "Comida"
-    },
-    {
-      "name": "Helado de chocolate",
-      "price": "$5.00",
-      "id": 14,
-      "img": "https://images2.imgbox.com/e9/d7/05BdxY4n_o.png",
       "type": "Extra",
       "category": "Comida"
     }
