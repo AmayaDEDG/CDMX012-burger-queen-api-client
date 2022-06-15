@@ -3,7 +3,7 @@ import React  from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { HomeAdm } from '../views/Administrator/homeAdm/HomeAdm.js'
 import { AddPartners } from '../views/Administrator/addPartners/AddPartners.js'
-import Waiter from '../views/Home/Waiter';
+import HomeWaiter from '../views/waiter/HomeWaiter';
 import Chef from '../views/Home/Chef';
 import { auth, logOut } from '../lib/firebaseAuth.js'
 import { onAuthStateChanged } from 'firebase/auth';
@@ -41,7 +41,7 @@ const PrivateRoutes = () => {
   } else if (role === 'waiter') {
     return (
       <Routes>
-        <Route path='/' element={<Waiter logOut={logOut} />} />
+        <Route path='/' element={<HomeWaiter logOut={logOut} />} />
       </Routes>
     )
   } else if (role === 'chef') {

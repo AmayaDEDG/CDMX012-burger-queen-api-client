@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { onSnapshot, collection} from 'firebase/firestore';
-// import React from 'react';
+import React from 'react';
 import { db } from '../../lib/firebaseConfig';
 import './associate.css'
 import { useNavigate } from "react-router-dom";
