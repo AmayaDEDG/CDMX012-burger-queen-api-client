@@ -11,7 +11,7 @@ const Waiter = ({ logOut }) => {
 
   const [category, setCategory] = useState('Desayuno');
   const [products, setProducts] = useState([]);
-  // const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0)
 
   useEffect(() => {
     fetch('http://localhost:3001/productos')
@@ -24,12 +24,24 @@ const Waiter = ({ logOut }) => {
   }, [])
 
   const handleCategory = (e) => {
-    setCategory(e.target.value)
+    setCategory(e.target.value);
+    setCount(0);
   };
 
   // const handleCount = ({ target: { name, value } }) => {
 
   // }
+
+  const handleLess = (item) => {
+    console.log(item);
+    // while (count >= 0) {
+      setCount(count - 1);
+    // }
+  }
+  const handleMore = (item) => {
+    console.log(item);
+    setCount(count + 1);
+  }
 
 
 
@@ -58,9 +70,9 @@ const Waiter = ({ logOut }) => {
                 <h5>{product.price}</h5>
               </section>
               <section className={styles.comanda}>
-                <button><img src={menos} alt='ícono de menos' /></button>
-                <h5>0</h5>
-                <button><img src={Plus} alt='ícono de más' /></button>
+                <button onClick={() => handleLess(product)}><img src={menos} alt='ícono de menos' /></button>
+                <h5>{count}</h5>
+                <button onClick={() => handleMore(product)}><img src={Plus} alt='ícono de más' /></button>
               </section>
             </div>))}
         </article>
