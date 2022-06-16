@@ -1,4 +1,5 @@
 // import React  from 'react';
+import axios from 'axios';
 import { useState, useEffect } from 'react';
 import styles from './Waiter.module.css';
 import Header from '../Administrator/products/Header'
@@ -13,15 +14,30 @@ const Waiter = ({ logOut }) => {
   const [products, setProducts] = useState([]);
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    fetch('http://localhost:3001/productos')
-      .then(res => {
-        return res.json();
-      })
-      .then(data => {
-        setProducts(data);
-      });
-  }, [])
+  // useEffect(() => {
+  //   fetch('http://localhost:3001/productos')
+  //     .then(res => {
+  //       return res.json();
+  //     })
+  //     .then(data => {
+  //       setProducts(data);
+  //     });
+  // }, [])
+
+
+  const dataProducts = 'http://localhost:3001/productos';
+
+  const menuData = async () =>{
+    await axios.get(dataProducts)
+     .then(response=>{
+       setProducts(response.data);
+     })
+ }
+ 
+ useEffect(()=>{
+   menuData();
+ },[])
+
 
   const handleCategory = (e) => {
     setCategory(e.target.value);

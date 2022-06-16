@@ -1,0 +1,19 @@
+.HeaderTable{
+    width: 90%;
+    padding: 1%;
+    background: rgba(241, 143, 222, 0.4);
+    position: absolute;
+    border: 1px solid #F645D4;
+    top: 20%;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 30% 15% 55%;
+    align-items: center;
+}
+.HeaderTable h5 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin-right: 5%;
+    margin-left: 9%;
+}
