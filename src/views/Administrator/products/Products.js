@@ -9,7 +9,6 @@ import ModalBox from './ModalBox';
 import Swal from 'sweetalert2';
 import { FiTrash2 } from 'react-icons/fi'
 
-//falta agregarle el sweetalert para borrado
 
 const Products = ({logOut}) => {
 
@@ -73,6 +72,7 @@ const Products = ({logOut}) => {
             info.price = obtained.price;
             info.type = obtained.type;
             info.category = obtained.category;
+            info.img = obtained.img;
           }
           return info;
         })

@@ -98,19 +98,53 @@
     },
     {
       "name": "Helado de fresa",
-      "price": "$5.00",
+      "price": "$10.00",
       "id": 13,
       "img": "https://images2.imgbox.com/4a/75/vcmtmL4m_o.png",
       "type": "Extra",
       "category": "Comida"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "order": {
+        "name": "algo1",
+        "price": "algo1",
+        "quantity": "algo1"
+      },
+      "customer": "bob", 
+      "status": "waiting"
     },
     {
-      "name": "Helado de chocolate",
-      "price": "$5.00",
-      "id": 14,
-      "img": "https://images2.imgbox.com/e9/d7/05BdxY4n_o.png",
-      "type": "Extra",
-      "category": "Comida"
+      "id": 2,
+      "order": {
+        "name": "algo2",
+        "price": "algo2",
+        "quantity": "algo2"
+      },
+      "customer": "bob2", 
+      "status": "ready"
+    },
+    {
+      "id": 3,
+      "order": {
+        "name": "algo3",
+        "price": "algo3",
+        "quantity": "algo3"
+      },
+      "customer": "bob3", 
+      "status": "done"
+    },
+    {
+      "id": 4,
+      "order": {
+        "name": "algo4",
+        "price": "algo4",
+        "quantity": "algo4"
+      },
+      "customer": "bob3", 
+      "status": "ready"
     }
   ]
 }
