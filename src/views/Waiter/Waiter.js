@@ -40,6 +40,7 @@ const Waiter = ({ logOut }) => {
 
   const handleCategory = (e) => {
     setCategory(e.target.value);
+    setQuantity(0);
   };
 
 
