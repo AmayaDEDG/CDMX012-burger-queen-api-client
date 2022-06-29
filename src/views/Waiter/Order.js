@@ -2,6 +2,9 @@ import Header from '../Administrator/products/Header'
 import styles from './Order.module.css';
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
+import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label, Form } from 'reactstrap';
+import { useForm } from "react-hook-form";
+import { GrClose } from 'react-icons/gr'
 
 
 const Order = ({ logOut }) => {
@@ -32,8 +35,8 @@ const Order = ({ logOut }) => {
             <thead>
               <tr>
                 <th className='blu'>ítem</th>
-                <th className='blu'>Precio</th>
                 <th className='blu'>Cantidad</th>
+                <th className='blu'>Precio</th>
               </tr>
             </thead>
             <tbody>
@@ -42,16 +45,6 @@ const Order = ({ logOut }) => {
                 <td>Holi</td>
                 <td>Holi</td>
               </tr>
-              {/* {products && products.filter(product => product.category === category).map((product) => (
-                <tr key={product.id} >
-                  <td className='ble' >
-                    <img alt={product.name} src={product.img} className={styles.imgs}/><br/>
-                    {product.name}
-                  </td>
-                  <td className='ble'>{product.price}</td>
-                  <td className='ble'><AiFillMinusCircle color='#DFAD19' fontSize='300%' />  0  <BsFillPlusCircleFill  color='#F645D4' fontSize='300%'/></td>
-                </tr>
-              ))} */}
             </tbody>
           </table>
         </section>
