@@ -21,6 +21,7 @@ const ModalBox = ({ modalStatus, toggle, formCategory, formType, onSubmit, type,
     }
   }, [formState, reset])
 
+
   useEffect(() => {
     if (modalStatus === true) {
       reset({

@@ -1,59 +1,73 @@
-import Header from '../Administrator/products/Header'
 import styles from './Order.module.css';
-import { useNavigate } from "react-router-dom";
+import { useState } from 'react';
 import Swal from 'sweetalert2';
-import { Button, Modal, ModalHeader, ModalBody, FormGroup, Label, Form } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, FormGroup, Form, Label } from 'reactstrap';
 import { useForm } from "react-hook-form";
 import { GrClose } from 'react-icons/gr'
 
 
-const Order = ({ logOut }) => {
-  const navigate = useNavigate();
+const Order = ({ toggle, modalStatus, order, totalQuant, totalPrice }) => {
 
+  const [client, setClient] = useState(null)
   const confrimOrder = () => {
     Swal.fire({
-      text: 'Orden lista para Bob',
+      text: `Orden lista para ${client}`,
       confirmButtonColor: '#9291E4',
       confirmButtonText: '  Aceptar  ',
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log('ba')
+        console.log('Orden registrada')
       }
     })
   }
 
+  const closeModal = () => {
+    toggle();
+    setClient(null)
+  }
+
+
   return (
-    <>
-      <Header view={'Status'} logOut={logOut} route={'/Status'} />
-      <article className={styles.Order}>
+    <Modal isOpen={modalStatus} toggle={closeModal} style={{ maxWidth: '95%', width: '100%', marginTop: '15%' }}>
+      <ModalHeader close={<button className="close" onClick={closeModal}><GrClose /></button>}>
+      </ModalHeader>
+      <ModalBody className={styles.Order}>
         <section className={styles.text}>
-          <h2>Resumen de pedido para: </h2>
-          <input type='text' placeholder='Nombre de cliente...' />
+          <h2 className='bolded'>Resumen de pedido para:  </h2>
+          <input
+            type='text'
+            placeholder='Nombre de cliente'
+            className={styles.client}
+            onChange={(e) => setClient(e.target.value)}
+          />
         </section>
-        <section className={`table-responsive ${styles.orderTable}`}>
-          <table className='table'>
-            <thead>
-              <tr>
-                <th className='blu'>ítem</th>
-                <th className='blu'>Cantidad</th>
-                <th className='blu'>Precio</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Holi</td>
-                <td>Holi</td>
-                <td>Holi</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <article className={styles.orderTable}>
+          <section className={styles.HeaderTable}>
+            <h4 className='bolded'>Ítem</h4>
+            <h4 className='bolded'>Cantidad</h4>
+            <h4 className='bolded'>Precio</h4>
+          </section>
+          {order && order.map((product, index) => {
+            return (
+              <section className={styles.menu} key={index} >
+                <h5>{product.name}</h5>
+                <h5>x{product.quantity}</h5>
+                <h5>${parseInt(product.price) * product.quantity}.00</h5>
+              </section>
+            )
+          })}
+          <section className={`${styles.menu} ${styles.down}`}>
+            <h4 className='bolded'>TOTAL</h4>
+            <h4 className='bolded'>x{totalQuant}</h4>
+            <h4 className='bolded'>${totalPrice}.00</h4>
+          </section>
+        </article>
         <section className={styles.buttons}>
-          <button className={styles.button} onClick={() => navigate(-1)}>Editar</button>
+          <button className={styles.button} onClick={closeModal}>Editar</button>
           <button className={`${styles.button} ${styles.pink}`} onClick={confrimOrder}>Confirmar</button>
         </section>
-      </article>
-    </>
+      </ModalBody>
+    </Modal>
   );
 }
 

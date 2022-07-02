@@ -5,7 +5,7 @@
       "name": "Café americano",
       "type": "Bebida",
       "category": "Desayuno",
-      "price": "$5.00",
+      "price": "5.00",
       "img": "https://images2.imgbox.com/52/c7/iV0xnztW_o.png"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Café con leche",
       "type": "Bebida",
       "category": "Desayuno",
-      "price": "$7.00",
+      "price": "7.00",
       "img": "https://images2.imgbox.com/e1/dd/8BmmUf8s_o.png"
     },
     {
@@ -21,7 +21,7 @@
       "name": "Sándwich de jamón y queso",
       "type": "Alimento",
       "category": "Desayuno",
-      "price": "$10.00",
+      "price": "10.00",
       "img": "https://images2.imgbox.com/a1/4b/lIttxStO_o.png"
     },
     {
@@ -29,7 +29,7 @@
       "name": "Jugo de frutas natural",
       "type": "Bebida",
       "category": "Desayuno",
-      "price": "$7.00",
+      "price": "7.00",
       "img": "https://images2.imgbox.com/15/d4/lfLUCmYH_o.png"
     },
     {
@@ -37,7 +37,7 @@
       "name": "Hamburguesa sencilla",
       "type": "Alimento",
       "category": "Comida",
-      "price": "$10.00",
+      "price": "10.00",
       "img": "https://images2.imgbox.com/56/1c/eoflTtij_o.png"
     },
     {
@@ -45,7 +45,7 @@
       "name": "Hamburguesa doble",
       "type": "Alimento",
       "category": "Comida",
-      "price": "$15.00",
+      "price": "15.00",
       "img": "https://images2.imgbox.com/db/88/ecaFKQB0_o.png"
     },
     {
@@ -53,7 +53,7 @@
       "name": "Papas fritas",
       "type": "Extra",
       "category": "Comida",
-      "price": "$5.00",
+      "price": "5.00",
       "img": "https://images2.imgbox.com/d8/67/Net1wJwo_o.png"
     },
     {
@@ -61,7 +61,7 @@
       "name": "Aros de cebolla",
       "type": "Extra",
       "category": "Comida",
-      "price": "$5.00",
+      "price": "5.00",
       "img": "https://images2.imgbox.com/a1/31/8v6fm2Tj_o.png"
     },
     {
@@ -69,7 +69,7 @@
       "name": "Gaseosa 500ml",
       "type": "Bebida",
       "category": "Comida",
-      "price": "$7.00",
+      "price": "7.00",
       "img": "https://images2.imgbox.com/90/06/T1d31dzy_o.png"
     },
     {
@@ -77,7 +77,7 @@
       "name": "Gaseosa 750ml",
       "type": "Bebida",
       "category": "Comida",
-      "price": "$10.00",
+      "price": "10.00",
       "img": "https://images2.imgbox.com/90/06/T1d31dzy_o.png"
     },
     {
@@ -85,7 +85,7 @@
       "name": "Agua 500ml",
       "type": "Bebida",
       "category": "Comida",
-      "price": "$5.00",
+      "price": "5.00",
       "img": "https://images2.imgbox.com/bc/20/MhdAh9NC_o.png"
     },
     {
@@ -93,12 +93,12 @@
       "name": "Agua 750ml",
       "type": "Bebida",
       "category": "Comida",
-      "price": "$7.00",
+      "price": "7.00",
       "img": "https://images2.imgbox.com/bc/20/MhdAh9NC_o.png"
     },
     {
       "name": "Helado de fresa",
-      "price": "$10.00",
+      "price": "10.00",
       "id": 13,
       "img": "https://images2.imgbox.com/4a/75/vcmtmL4m_o.png",
       "type": "Extra",

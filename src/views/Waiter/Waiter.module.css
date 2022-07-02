@@ -33,6 +33,13 @@
   align-self: flex-end;
 }
 
+.delete{
+  background: #F18FDE;
+  align-self: flex-start;
+  position: absolute;
+  bottom:4%;
+}
+
 .HeaderTable {
   padding: 1%;
   background: rgba(241, 143, 222, 0.4);

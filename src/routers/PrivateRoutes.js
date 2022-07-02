@@ -10,7 +10,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { RecordAsso } from '../views/Administrator/addUser/RecordAsso.js';
 import Products from '../views/Administrator/products/Products.js';
 import Status from '../views/Waiter/Status';
-import Order from '../views/Waiter/Order';
+// import Order from '../views/Waiter/Order';
 import { EditDeleteAsso } from '../Components/associate/EditDeleteAsso.js';
 
 const PrivateRoutes = () => {
@@ -44,7 +44,7 @@ const PrivateRoutes = () => {
     return (
       <Routes>
         <Route path='/' element={<Waiter logOut={logOut} />} />
-        <Route path='/Order' element={<Order logOut={logOut}/>} />
+        {/* <Route path='/Order' element={<Order logOut={logOut}/>} /> */}
         <Route path='/Status' element={<Status logOut={logOut}/>} />
       </Routes>
     )

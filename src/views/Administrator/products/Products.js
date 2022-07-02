@@ -151,7 +151,7 @@ const Products = ({logOut}) => {
                   <td className='bolded ble'>{product.id}</td>
                   <td className='ble' onClick={() => loadData(product)}>{product.name}</td>
                   {/* <td><img alt='bla'src={product.img}/></td> */}
-                  <td className='ble'>{product.price}</td>
+                  <td className='ble'>${product.price}</td>
                   <td className='ble'>{product.category}</td>
                   <td className='trashIcon ble' onClick={() => deleteAction(product)}><FiTrash2 /></td>
                 </tr>
