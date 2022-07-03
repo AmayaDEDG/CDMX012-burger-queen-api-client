@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import styles from './Waiter.module.css';
 import Header from '../Administrator/products/Header'
 import Counter from './Counter'
@@ -25,9 +25,18 @@ const Waiter = ({ logOut }) => {
       })
   }
 
+  const refreshCounters = useCallback(() => { //funciona pero no se ve bonito, a lo mejor reiniciar contadores con setOrder?
+    setProducts([]);
+    menuData();
+    setQuantity(0);
+    setOrder([])
+  }, [])
+
   useEffect(() => {
     menuData();
   }, [])
+
+
 
 
   const handleCategory = (e) => {
@@ -52,6 +61,26 @@ const Waiter = ({ logOut }) => {
     }
     setTotalPrice(totalP)
   };
+
+
+  const createOrder = (data) => {
+    fetch('http://localhost:3001/pedidos', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    }).then(res => res.json())
+      .catch(error => console.error('Error:', error))
+      .then(response => {
+        console.log('Success:', response);
+        // setProducts(products.concat(response));
+      });
+  }
+
+  const onSubmit = (data) => {
+    createOrder(data);
+  }
 
 
 
@@ -96,7 +125,7 @@ const Waiter = ({ logOut }) => {
         </article>
         <br />
         {(order.length > 0) &&
-          <button className={`${styles.button} ${styles.delete}`} onClick={() => { setQuantity(0); setOrder([]) }}>
+          <button className={`${styles.button} ${styles.delete}`} onClick={() => refreshCounters()}>
             Cancelar
           </button>}
         <button className={styles.button} onClick={() => { total(); toggle() }}>
@@ -110,6 +139,8 @@ const Waiter = ({ logOut }) => {
         order={order}
         totalPrice={totalPrice}
         totalQuant={totalQuant}
+        refreshCounters={refreshCounters}
+        onSubmit={onSubmit}
 
       />
 
