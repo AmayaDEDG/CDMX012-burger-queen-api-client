@@ -36,9 +36,6 @@ const Waiter = ({ logOut }) => {
     menuData();
   }, [])
 
-
-
-
   const handleCategory = (e) => {
     setCategory(e.target.value);
     setQuantity(0);
@@ -54,14 +51,12 @@ const Waiter = ({ logOut }) => {
       totalQ += order[i].quantity
     }
     setTotalQuant(totalQ);
-
     let totalP = 0;
     for (let i = 0; i < order.length; i++) {
       totalP += parseInt(order[i].price) * parseInt(order[i].quantity)
     }
     setTotalPrice(totalP)
   };
-
 
   const createOrder = (data) => {
     fetch('http://localhost:3001/pedidos', {
@@ -74,16 +69,12 @@ const Waiter = ({ logOut }) => {
       .catch(error => console.error('Error:', error))
       .then(response => {
         console.log('Success:', response);
-        // setProducts(products.concat(response));
       });
   }
 
   const onSubmit = (data) => {
     createOrder(data);
   }
-
-
-
 
 
   return (
