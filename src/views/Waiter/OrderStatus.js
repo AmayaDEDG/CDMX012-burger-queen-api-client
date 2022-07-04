@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import styles from './OrderStatus.module.css';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
-import { GrClose } from 'react-icons/gr'
+import { GrClose } from 'react-icons/gr';
+// import axios from 'axios';
+
 
 
 const OrderStauts = ({ orderStatus, status }) => {
@@ -18,6 +20,18 @@ const OrderStauts = ({ orderStatus, status }) => {
         setOrders(data);
       });
   }, [])
+
+  // const deliverOrder = async () => {
+  //   await axios
+  //     .patch('http://localhost:3001/pedidos/' + id, {
+  //       status: 'done',
+  //     }, {
+  //       headers: { 'Content-type': 'application/json; charset=UTF-8' }
+  //     });
+  //   toggle()
+  // }
+
+  
 
   // const showDetails = () => {}
 

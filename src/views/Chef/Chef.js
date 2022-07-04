@@ -11,13 +11,13 @@ const Chef = ({ logOut }) => {
       <br />
       <section className={styles.tables}>
         <FoodStatus
-          foodStatus={'Órdenes listas para entregar'}
-          status={'ready'}
+          foodStatus={'Órdenes pendientes'}
+          status={'waiting'}
         />
         <br />
         <FoodStatus
-          foodStatus={'Órdenes pendientes'}
-          status={'waiting'}
+          foodStatus={'Órdenes listas para entregar'}
+          status={'ready'}
         />
         <br />
         <FoodStatus

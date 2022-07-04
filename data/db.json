@@ -168,7 +168,7 @@
     },
     {
       "customer": "Amaya",
-      "status": "waiting",
+      "status": "ready",
       "order": [
         {
           "name": "Hamburguesa sencilla",
@@ -219,7 +219,7 @@
     },
     {
       "customer": "Tim",
-      "status": "waiting",
+      "status": "ready",
       "order": [
         {
           "name": "Jugo de frutas natural",
@@ -231,7 +231,7 @@
     },
     {
       "customer": "Luis",
-      "status": "waiting",
+      "status": "ready",
       "order": [
         {
           "name": "Papas fritas",
