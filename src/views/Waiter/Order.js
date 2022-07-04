@@ -15,7 +15,6 @@ const Order = ({ toggle, modalStatus, order, totalQuant, totalPrice, refreshCoun
   const settingValues = () => {
     setValue('customer', `${client}`);
     setValue('status', 'waiting');
-    setValue('order',);
     const arrOrder = []
     order.map((product) =>
       arrOrder.push({
@@ -25,6 +24,14 @@ const Order = ({ toggle, modalStatus, order, totalQuant, totalPrice, refreshCoun
       })
     );
     setValue('order', arrOrder);
+    setValue('totalQuantity', totalQuant);
+    setValue('totalPrice', totalPrice);
+    const time = new Date();
+    const [hour, minutes] = [time.getHours(), time.getMinutes()];
+    const date = hour +':'+minutes
+    setValue('timeReceived', date)
+
+
   }
 
   const confrimOrder = () => {
@@ -56,7 +63,7 @@ const Order = ({ toggle, modalStatus, order, totalQuant, totalPrice, refreshCoun
       <ModalBody className={styles.Order}>
         <Form onSubmit={handleSubmit(onSubmit)}>
           <section className={styles.text}>
-            <h2 className='bolded'>Resumen de pedido para:  </h2>
+            <h3 className='bolded'>Resumen de pedido para:  </h3>
             <input
               type='text'
               placeholder='Nombre de cliente'

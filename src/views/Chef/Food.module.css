@@ -28,3 +28,15 @@
   text-align: center;
   align-self: flex-end;
 }
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.back{
+  color: #F06AD7;
+  font-size: 60px;
+}
+.boxed{
+  border: solid 2px #F06AD7;
+  padding: 2%;
+}

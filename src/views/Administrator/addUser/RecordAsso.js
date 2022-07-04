@@ -76,7 +76,7 @@ export const RecordAsso = () => {
              <button id='back' onClick={partners}><img src={back} alt='Volver' id='backImg'/></button>
 
       </div>
-      <h3>Alta de Asociado</h3>
+      <h3 className='asso'>Alta de Asociado</h3>
       <form className='form' onSubmit={submitHandler}>
         <label className='labelName'>Nombre</label>
         <input

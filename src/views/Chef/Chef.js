@@ -1,4 +1,4 @@
-import Header from '../Administrator/products/Header'
+import HeaderChef from './HeaderChef';
 import styles from '../Waiter/Status.module.css';
 import FoodStatus from './FoodStatus';
 
@@ -6,7 +6,7 @@ import FoodStatus from './FoodStatus';
 const Chef = ({ logOut }) => {
   return (
     <>
-      <Header logOut={logOut} />
+      <HeaderChef logOut={logOut} />
       <article className='Status'>
       <br />
       <section className={styles.tables}>
