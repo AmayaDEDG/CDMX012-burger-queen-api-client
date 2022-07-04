@@ -7,10 +7,20 @@
 }
 .background{
   background-color: white;
+  border: solid 3px #FBC72Ced;
 }
 .orderName{
   text-align: center;
 }
 .seeDetails{
   text-align: end;
+}
+.pink{
+  border: solid 3px #F18FDE;
+}
+.yellow{
+  border: solid 3px #B99119;
+}
+.purple{
+  border: solid 3px #9291E4;
 }
