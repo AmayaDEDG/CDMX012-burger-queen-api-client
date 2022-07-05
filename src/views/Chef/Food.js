@@ -48,11 +48,11 @@ const Food = ({ logOut }) => {
 
   const filterTilte = () => {
     if (food.status === 'ready') {
-      return (<h2 className={styles.boxed}>Lista para entregar</h2>)
+      return (<h3 className={styles.boxed}>Lista para entregar</h3>)
     } else if (food.status === 'waiting') {
-      return (<h2 className={styles.boxed}> Preparación pendiente</h2>)
+      return (<h3 className={styles.boxed}> Preparación pendiente</h3>)
     } else if (food.status === 'done') {
-      return (<h2 className={styles.boxed}>Entregada</h2>)
+      return (<h3 className={styles.boxed}>Entregada</h3>)
     }
   }
 
@@ -60,38 +60,40 @@ const Food = ({ logOut }) => {
     <>
       <HeaderChef logOut={logOut} />
       <article className={styles.order}>
-        <section className={styles.header}>
+        <section className={styles.above}>
           <BsArrowLeftCircleFill className={styles.back} onClick={() => navigate(-1)} />
           {filterTilte()}
         </section>
-        <br /><br />
+        <br />
         <h2 className='bolded'>Orden para: {food.customer && (food.customer).toUpperCase()}</h2>
         <br />
         <section className={styles.food}>
           <section className={styles.header}>
-            <h2 className='bolded'>Ítem</h2>
-            <h2 className='bolded'>Cantidad</h2>
-            <h2 className='bolded'>Listo</h2>
+            <h3 className='bolded'>Ítem</h3>
+            <h3 className='bolded'>Cantidad</h3>
+            {/* <h3 className='bolded'>Listo</h3> */}
           </section>
-          <br /><br />
+          <br />
           {arr && arr.map((item, index) => {
             return (
               <section key={index} className={styles.item}>
                 <h4>{item.name}</h4>
                 <h4>x{item.quantity}</h4>
-                <br /><br /><br />
+                <br />
               </section>
             )
           })}
           <section className={styles.item}>
             <h4 className='bolded'>TOTAL</h4>
-            <h4 className='bolded'>{food.totalQuantity}</h4>
-            <br /><br /><br />
-            <h4 className='bolded'>Hora de registro:</h4>
-            <h4 className='bolded'>{food.timeReceived}</h4>
+            <h4 className='bolded'>x{food.totalQuantity}</h4>
             <br />
-            {food.status === 'ready' && <h4 className='bolded'>Hora de preparado:</h4>} {/* TAMBIÉN EL 'DONE'*/}
-            {food.status === 'ready' && <h4 className='bolded'>{food.timeDelivered}</h4>}
+          </section>
+          <h3 className={styles.time}><strong>Tiempo:</strong></h3>
+          <section className={styles.hour}>
+            <h4>Hora de registro:</h4>
+            <h4 className='bolded'>{food.timeReceived}</h4>
+            {food.status !== 'waiting' && <h4>Hora de preparado:</h4>}
+            {food.status !== 'waiting' && <h4 className='bolded'>{food.timeDelivered}</h4>}
           </section>
         </section>
         <br /><br />

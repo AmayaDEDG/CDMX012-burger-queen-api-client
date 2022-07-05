@@ -1,28 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styles from './OrderStatus.module.css';
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
 import { GrClose } from 'react-icons/gr';
 import axios from 'axios';
 
 
-
-const OrderStauts = ({ orderStatus, status }) => {
-  const [orders, setOrders] = useState([]);
+const OrderStauts = ({ orderStatus, status, orders, ordersData }) => {
   const [modalStatus, setModalStatus] = useState(false);
   const [order, setOrder] = useState({});
-
-  const dataOrders = 'http://localhost:3001/pedidos';
-
-  const ordersData = async () => {
-    await axios.get(dataOrders)
-      .then(response => {
-        setOrders(response.data);
-      })
-  }
-
-  useEffect(() => {
-    ordersData()
-  }, [])
 
   const deliverOrder = async () => {
     await axios
@@ -31,8 +16,7 @@ const OrderStauts = ({ orderStatus, status }) => {
       }, {
         headers: { 'Content-type': 'application/json; charset=UTF-8' }
       });
-    setOrders([]);
-    ordersData(); //jala bien pero no se actualiza el de 'done'
+    ordersData();
     toggle();
   }
 

@@ -38,9 +38,9 @@ const Counter = ({ product, setQuantity, setOrder, order }) => {
 
   return (
     <section className={styles.comanda}>
-      <button onClick={() => handleLess()}><img src={menos} alt='ícono de menos' /></button>
+      <button style={{ width: '90px', height:'90px' }} onClick={() => handleLess()}><img src={menos} alt='ícono de menos' /></button>
       <h5>{count}</h5>
-      <button onClick={() => handleMore()}><img src={Plus} alt='ícono de más' /></button>
+      <button style={{ width: '90px', height:'90px' }} onClick={() => handleMore()}><img src={Plus} alt='ícono de más' /></button>
     </section>
   )
 }

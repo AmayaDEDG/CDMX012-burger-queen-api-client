@@ -9,7 +9,7 @@
 
 .background {
   background-color: white;
-  border: solid 4px #FBC72C;
+  border: solid 4px #FBC72C !important;
 }
 
 .orderName {

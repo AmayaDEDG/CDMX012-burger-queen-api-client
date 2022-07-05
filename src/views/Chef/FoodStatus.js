@@ -25,11 +25,11 @@ const FoodStatus = ({ foodStatus, status }) => {
         <table className={`table ${styles.background}`}>
           <tbody>
             {orders && orders.filter(product => product.status === status).map((order) => (
-              <tr key={order.id} className={styles.yellow}>
+              <tr key={order.id} className={styles.yellow} onClick={() => navigate(`/Food/${order.id}`)}>
                 <td className={styles.orderName} >
                   {order.customer}
                 </td>
-                <td className={styles.seeDetails} onClick={() => navigate(`/Food/${order.id}`)}>ver detalles...</td>
+                <td className={styles.seeDetails} >ver detalles...</td>
               </tr>
             ))}
           </tbody>

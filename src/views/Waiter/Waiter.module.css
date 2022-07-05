@@ -19,6 +19,11 @@
   padding-right: 10px;
 }
 
+.buttons{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .button {
   width: 250px;
   height: 60px;
@@ -30,14 +35,13 @@
   font-size: 25px;
   font-weight: bolder;
   text-align: center;
-  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .delete{
   background: #F18FDE;
-  align-self: flex-start;
-  position: absolute;
-  bottom:4%;
+  margin-right: 40%;
+
 }
 
 .HeaderTable {

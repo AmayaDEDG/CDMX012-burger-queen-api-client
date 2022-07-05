@@ -115,13 +115,15 @@ const Waiter = ({ logOut }) => {
           })}
         </article>
         <br />
-        {(order.length > 0) &&
-          <button className={`${styles.button} ${styles.delete}`} onClick={() => refreshCounters()}>
-            Cancelar
-          </button>}
-        <button className={styles.button} onClick={() => { total(); toggle() }}>
-          Resumen
-        </button>
+        <section className={styles.buttons}>
+          {(order.length > 0) &&
+            <button className={`${styles.button} ${styles.delete}`} onClick={() => refreshCounters()}>
+              Cancelar
+            </button>}
+          <button className={styles.button} onClick={() => { total(); toggle() }}>
+            Resumen
+          </button>
+        </section>
       </section>
 
       <Order
