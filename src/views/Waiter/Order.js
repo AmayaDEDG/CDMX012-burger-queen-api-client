@@ -69,7 +69,6 @@ const Order = ({ toggle, modalStatus, order, totalQuant, totalPrice, refreshCoun
               placeholder='Nombre de cliente'
               className={styles.client}
               onChange={(e) => setClient(e.target.value)}
-              required
             />
           </section>
           <article className={styles.orderTable}>

@@ -50,7 +50,7 @@ const PrivateRoutes = () => {
     return (
       <Routes>
         <Route path='/' element={<Chef logOut={logOut} />} />
-        <Route path='/Food/:id' element={<Food/>} />
+        <Route path='/Food/:id' element={<Food logOut={logOut}/>} />
       </Routes>
     )
   }

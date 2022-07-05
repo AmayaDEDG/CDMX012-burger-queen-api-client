@@ -1,9 +1,12 @@
 import icoBurgerQueen from '../../Components/images/icoBurgerQueen.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 const HeaderChef = ({ logOut }) => {
+  const navigate = useNavigate()
   const returnHome = () => {
     logOut();
+    navigate('/');
   }
   return (
     <article>
