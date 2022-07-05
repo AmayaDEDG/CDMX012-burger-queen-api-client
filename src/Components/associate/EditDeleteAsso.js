@@ -63,9 +63,8 @@ export const EditDeleteAsso = () => {
     Swal.fire({
       text: '¿Estás seguro de darlo de baja?',
       showCancelButton: true,
-      reverseButtons: true,
-      confirmButtonText: 'Aceptar',
       cancelButtonText: 'Cancelar',
+      confirmButtonText: 'Aceptar',
       backdrop: ` rgba(0, 0, 0, 0.70)`,
 
     }).then(async (result) => {
@@ -85,7 +84,7 @@ export const EditDeleteAsso = () => {
         <img src={icoBurgerQueen} alt='Burger Queen' id='icoBurgerQueen' />
         <button id='back' onClick={partners}><img src={back} alt='Volver' id='backImg' /></button>
       </div>
-      <h3>Asociado</h3>
+      <h3 className='asso'>Asociado</h3>
       <button onClick={eliminar} id='baja'>Dar de baja</button>
       <section className='form'>
         <label className='labelName'>Nombre</label>

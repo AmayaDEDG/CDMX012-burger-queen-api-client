@@ -17,6 +17,7 @@ const Header = ({view, logOut, route}) => {
           src={icoBurgerQueen}
           alt='Burger Queen'
           id='icoBurgerQueen'
+          style={{ width: '90px', height:'90px' }}
         />
         <button
           className='employees'

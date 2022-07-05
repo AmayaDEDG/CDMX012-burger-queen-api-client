@@ -19,7 +19,7 @@ export const AddPartners = ({ logOut }) => {
 
       <Header view={'Productos'} logOut={logOut} route={'/Products'} />
 
-      <h3 className='bolded size-text'>Asociados</h3>
+      <h3 className='bolded size-text asso'>Asociados</h3>
       <section id='listaDeAsociados'>
         <div id='tarjetaCategory'>
           <div><h5 className='bolded bigger'>Nombre</h5></div>

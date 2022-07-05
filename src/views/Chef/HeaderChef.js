@@ -12,6 +12,7 @@ const HeaderChef = ({ logOut }) => {
           src={icoBurgerQueen}
           alt='Burger Queen'
           id='icoBurgerQueen'
+          style={{ width: '90px', height:'90px' }}
         />
         <button
           className='log-out'

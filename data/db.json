@@ -129,7 +129,7 @@
     },
     {
       "customer": "Jorge",
-      "status": "ready",
+      "status": "done",
       "order": [
         {
           "name": "Café americano",
@@ -150,7 +150,7 @@
     },
     {
       "customer": "Luisa",
-      "status": "ready",
+      "status": "done",
       "order": [
         {
           "name": "Jugo de frutas natural",
@@ -166,7 +166,7 @@
     },
     {
       "customer": "Claudia",
-      "status": "waiting",
+      "status": "ready",
       "order": [
         {
           "name": "Hamburguesa sencilla",
@@ -207,11 +207,12 @@
       "totalQuantity": 17,
       "totalPrice": 138,
       "timeReceived": "16:19",
-      "id": 4
+      "id": 4,
+      "timeDelivered": "18:41"
     },
     {
       "customer": "Vero",
-      "status": "done",
+      "status": "ready",
       "order": [
         {
           "name": "Hamburguesa sencilla",
