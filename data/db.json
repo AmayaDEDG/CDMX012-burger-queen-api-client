@@ -120,41 +120,28 @@
       "timeDelivered": "16:12"
     },
     {
-      "customer": "Jorge",
+      "id": 2
+    },
+    {
+      "customer": "Iñaki",
       "status": "done",
       "order": [
         {
           "name": "Café americano",
-          "quantity": "1",
+          "quantity": "2",
           "price": "5.00"
         },
         {
           "name": "Sándwich de jamón y queso",
-          "quantity": "1",
+          "quantity": "2",
           "price": "10.00"
         }
       ],
-      "totalQuantity": 2,
-      "totalPrice": 15,
-      "timeReceived": "16:19",
-      "id": 2,
-      "timeDelivered": "16:22"
-    },
-    {
-      "customer": "Luisa",
-      "status": "done",
-      "order": [
-        {
-          "name": "Jugo de frutas natural",
-          "quantity": "1",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 1,
-      "totalPrice": 7,
-      "timeReceived": "16:19",
+      "totalQuantity": 4,
+      "totalPrice": 30,
+      "timeReceived": "12:33",
       "id": 3,
-      "timeDelivered": "16:22"
+      "timeDelivered": "12:35"
     },
     {
       "customer": "Claudia",
@@ -189,393 +176,89 @@
           "name": "Agua 500ml",
           "quantity": "1",
           "price": "5.00"
-        },
-        {
-          "name": "Helado de chocolate",
-          "quantity": "2",
-          "price": "10.00"
         }
       ],
-      "totalQuantity": 17,
-      "totalPrice": 138,
-      "timeReceived": "16:19",
+      "totalQuantity": 15,
+      "totalPrice": 118,
+      "timeReceived": "12:34",
       "id": 4,
-      "timeDelivered": "18:41"
+      "timeDelivered": "12:35"
     },
     {
-      "customer": "Vero",
+      "id": 5
+    },
+    {
+      "customer": "Patricia",
       "status": "done",
       "order": [
         {
-          "name": "Hamburguesa sencilla",
-          "quantity": "1",
-          "price": "10.00"
-        },
-        {
-          "name": "Papas fritas",
-          "quantity": "1",
+          "name": "Café americano",
+          "quantity": "2",
           "price": "5.00"
         },
         {
-          "name": "Gaseosa 500ml",
-          "quantity": "1",
-          "price": "7.00"
+          "name": "Sándwich de jamón y queso",
+          "quantity": "6",
+          "price": "10.00"
         }
       ],
-      "totalQuantity": 3,
-      "totalPrice": 22,
-      "timeReceived": "16:20",
-      "id": 5,
-      "timeDelivered": "16:22"
-    },
-    {
-      "customer": "Tate",
-      "status": "done",
-      "order": [
-        {
-          "name": "Café con leche",
-          "quantity": "2",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 2,
-      "totalPrice": 14,
-      "timeReceived": "16:20",
+      "totalQuantity": 8,
+      "totalPrice": 70,
+      "timeReceived": "13:31",
       "id": 6,
-      "timeDelivered": "20:9"
+      "timeDelivered": "13:32"
     },
     {
-      "customer": "Iñaki",
-      "status": "done",
-      "order": [
-        {
-          "name": "Gaseosa 750ml",
-          "quantity": "1",
-          "price": "10.00"
-        },
-        {
-          "name": "Hamburguesa doble",
-          "quantity": "1",
-          "price": "15.00"
-        },
-        {
-          "name": "Papas fritas",
-          "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Helado de chocolate",
-          "quantity": "1",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 4,
-      "totalPrice": 40,
-      "timeReceived": "16:21",
-      "id": 7,
-      "timeDelivered": "23:0"
+      "id": 7
     },
     {
-      "customer": "Cons",
+      "customer": "José",
       "status": "done",
       "order": [
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "1",
-          "price": "10.00"
-        },
-        {
-          "name": "Agua 750ml",
-          "quantity": "1",
-          "price": "7.00"
-        },
-        {
-          "name": "Aros de cebolla",
-          "quantity": "1",
-          "price": "5.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 22,
-      "timeReceived": "16:21",
-      "id": 8,
-      "timeDelivered": "23:7"
-    },
-    {
-      "customer": "Elisa",
-      "status": "done",
-      "order": [
-        {
-          "name": "Café americano",
-          "quantity": "1",
-          "price": "5.00"
-        },
         {
           "name": "Café con leche",
-          "quantity": "1",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 2,
-      "totalPrice": 12,
-      "timeReceived": "20:7",
-      "id": 9,
-      "timeDelivered": "23:13"
-    },
-    {
-      "customer": "Pedro",
-      "status": "done",
-      "order": [
-        {
-          "name": "Café americano",
-          "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Café con leche",
-          "quantity": "1",
-          "price": "7.00"
-        },
-        {
-          "name": "Sándwich de jamón y queso",
-          "quantity": "1",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 22,
-      "timeReceived": "22:59",
-      "id": 10,
-      "timeDelivered": "23:21"
-    },
-    {
-      "customer": "Julieta",
-      "status": "done",
-      "order": [
-        {
-          "name": "Jugo de frutas natural",
           "quantity": "3",
           "price": "7.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 21,
-      "timeReceived": "23:6",
-      "id": 11,
-      "timeDelivered": "23:51"
-    },
-    {
-      "customer": "Toño",
-      "status": "done",
-      "order": [
-        {
-          "name": "Gaseosa 500ml",
-          "quantity": "1",
-          "price": "7.00"
-        },
-        {
-          "name": "Aros de cebolla",
-          "quantity": "1",
-          "price": "5.00"
-        }
-      ],
-      "totalQuantity": 2,
-      "totalPrice": 12,
-      "timeReceived": "23:12",
-      "id": 12,
-      "timeDelivered": "23:59"
-    },
-    {
-      "customer": "Debora",
-      "status": "done",
-      "order": [
-        {
-          "name": "Café americano",
-          "quantity": "1",
-          "price": "5.00"
-        }
-      ],
-      "totalQuantity": 1,
-      "totalPrice": 5,
-      "timeReceived": "23:20",
-      "id": 13,
-      "timeDelivered": "0:5"
-    },
-    {
-      "customer": "Mariana",
-      "status": "done",
-      "order": [
-        {
-          "name": "Café con leche",
-          "quantity": "2",
-          "price": "7.00"
         },
         {
           "name": "Sándwich de jamón y queso",
-          "quantity": "1",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 24,
-      "timeReceived": "23:51",
-      "id": 14,
-      "timeDelivered": "0:11"
-    },
-    {
-      "customer": "Marcia",
-      "status": "done",
-      "order": [
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "1",
-          "price": "10.00"
-        },
-        {
-          "name": "Aros de cebolla",
-          "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Gaseosa 500ml",
-          "quantity": "1",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 22,
-      "timeReceived": "23:58",
-      "id": 15,
-      "timeDelivered": "0:28"
-    },
-    {
-      "customer": "Ximena",
-      "status": "done",
-      "order": [
-        {
-          "name": "Agua 750ml",
-          "quantity": "1",
-          "price": "7.00"
-        },
-        {
-          "name": "Gaseosa 750ml",
-          "quantity": "1",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 2,
-      "totalPrice": 17,
-      "timeReceived": "0:4",
-      "id": 16,
-      "timeDelivered": "0:28"
-    },
-    {
-      "id": 17
-    },
-    {
-      "customer": "Diego",
-      "status": "done",
-      "order": [
-        {
-          "name": "Papas fritas",
           "quantity": "4",
-          "price": "5.00"
-        }
-      ],
-      "totalQuantity": 4,
-      "totalPrice": 20,
-      "timeReceived": "0:11",
-      "id": 18,
-      "timeDelivered": "0:33"
-    },
-    {
-      "customer": "Ricardo",
-      "status": "done",
-      "order": [
+          "price": "10.00"
+        },
         {
           "name": "Café americano",
           "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Sándwich de jamón y queso",
-          "quantity": "2",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 25,
-      "timeReceived": "0:27",
-      "id": 19,
-      "timeDelivered": "0:40"
-    },
-    {
-      "customer": "Paco",
-      "status": "done",
-      "order": [
-        {
-          "name": "Hamburguesa doble",
-          "quantity": "2",
-          "price": "15.00"
-        },
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "3",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 5,
-      "totalPrice": 60,
-      "timeReceived": "0:32",
-      "id": 20,
-      "timeDelivered": "0:48"
-    },
-    {
-      "customer": "Miguel",
-      "status": "ready",
-      "order": [
-        {
-          "name": "Agua 750ml",
-          "quantity": "1",
-          "price": "7.00"
-        },
-        {
-          "name": "Aros de cebolla",
-          "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Hamburguesa doble",
-          "quantity": "3",
-          "price": "15.00"
-        }
-      ],
-      "totalQuantity": 5,
-      "totalPrice": 57,
-      "timeReceived": "0:39",
-      "id": 21,
-      "timeDelivered": "0:54"
-    },
-    {
-      "customer": "Luismi",
-      "status": "ready",
-      "order": [
-        {
-          "name": "Café americano",
-          "quantity": "8",
           "price": "5.00"
         }
       ],
       "totalQuantity": 8,
-      "totalPrice": 40,
-      "timeReceived": "0:48",
-      "id": 22,
-      "timeDelivered": "1:1"
+      "totalPrice": 66,
+      "timeReceived": "13:37",
+      "id": 8,
+      "timeDelivered": "13:38"
     },
     {
-      "customer": "Rafa",
-      "status": "ready",
+      "id": 9
+    },
+    {
+      "customer": "Constanza",
+      "status": "done",
       "order": [
+        {
+          "name": "Hamburguesa doble",
+          "quantity": "1",
+          "price": "15.00"
+        },
+        {
+          "name": "Papas fritas",
+          "quantity": "2",
+          "price": "5.00"
+        },
+        {
+          "name": "Hamburguesa sencilla",
+          "quantity": "1",
+          "price": "10.00"
+        },
         {
           "name": "Gaseosa 500ml",
           "quantity": "1",
@@ -585,145 +268,34 @@
           "name": "Gaseosa 750ml",
           "quantity": "1",
           "price": "10.00"
-        },
-        {
-          "name": "Agua 500ml",
-          "quantity": "1",
-          "price": "5.00"
-        },
-        {
-          "name": "Agua 750ml",
-          "quantity": "5",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 8,
-      "totalPrice": 57,
-      "timeReceived": "0:53",
-      "id": 23,
-      "timeDelivered": "1:6"
-    },
-    {
-      "customer": "Clau",
-      "status": "ready",
-      "order": [
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "5",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 5,
-      "totalPrice": 50,
-      "timeReceived": "1:0",
-      "id": 24,
-      "timeDelivered": "7:49"
-    },
-    {
-      "customer": "Atalia",
-      "status": "ready",
-      "order": [
-        {
-          "name": "Aros de cebolla",
-          "quantity": "3",
-          "price": "5.00"
-        },
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "3",
-          "price": "10.00"
         }
       ],
       "totalQuantity": 6,
-      "totalPrice": 45,
-      "timeReceived": "1:6",
-      "id": 25,
-      "timeDelivered": "7:54"
-    },
-    {
-      "id": 26
-    },
-    {
-      "id": 27
-    },
-    {
-      "id": 28
-    },
-    {
-      "customer": "Bob",
-      "status": "ready",
-      "order": [
-        {
-          "name": "Aros de cebolla",
-          "quantity": "6",
-          "price": "5.00"
-        }
-      ],
-      "totalQuantity": 6,
-      "totalPrice": 30,
-      "timeReceived": "7:48",
-      "id": 29,
-      "timeDelivered": "8:2"
-    },
-    {
-      "id": 30
-    },
-    {
-      "customer": "Rocio",
-      "status": "waiting",
-      "order": [
-        {
-          "name": "Hamburguesa sencilla",
-          "quantity": "6",
-          "price": "10.00"
-        }
-      ],
-      "totalQuantity": 6,
-      "totalPrice": 60,
-      "timeReceived": "7:54",
-      "id": 31
-    },
-    {
-      "id": 32
-    },
-    {
-      "customer": "Monica",
-      "status": "waiting",
-      "order": [
-        {
-          "name": "Café con leche",
-          "quantity": "3",
-          "price": "7.00"
-        }
-      ],
-      "totalQuantity": 3,
-      "totalPrice": 21,
-      "timeReceived": "8:1",
-      "id": 33
-    },
-    {
-      "id": 34
+      "totalPrice": 52,
+      "timeReceived": "16:46",
+      "id": 10,
+      "timeDelivered": "16:47"
     },
     {
       "customer": "Pedro",
-      "status": "ready",
+      "status": "done",
       "order": [
         {
-          "name": "Café con leche",
-          "quantity": "1",
-          "price": "7.00"
+          "name": "Hamburguesa sencilla",
+          "quantity": "4",
+          "price": "10.00"
         },
         {
-          "name": "Sándwich de jamón y queso",
+          "name": "Aros de cebolla",
           "quantity": "3",
-          "price": "10.00"
+          "price": "5.00"
         }
       ],
-      "totalQuantity": 4,
-      "totalPrice": 37,
-      "timeReceived": "11:16",
-      "id": 35,
-      "timeDelivered": "11:17"
+      "totalQuantity": 7,
+      "totalPrice": 55,
+      "timeReceived": "16:46",
+      "id": 11,
+      "timeDelivered": "16:47"
     }
   ]
 }

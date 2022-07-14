@@ -25,12 +25,13 @@
     padding: 6%;
 }
 label{
-    font-size: 24px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelName{
     position: absolute;
     top: 7%;
+    font-size: larger;
 }
 #name{
     position: absolute;
@@ -40,7 +41,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelAge{
@@ -57,7 +58,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelEmail{
@@ -72,7 +73,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelPhone{
@@ -89,7 +90,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelPassword{
@@ -104,7 +105,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelDate{
@@ -121,7 +122,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelContract{
@@ -136,7 +137,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 .labelTime{
@@ -153,7 +154,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 
@@ -170,7 +171,7 @@ label{
     border: none;
     padding: 1%;
     border-bottom: 1.5px solid #FBC72C;
-    font-size: 21px;
+    font-size: larger;
     font-weight: bold;
 }
 #job{
@@ -188,14 +189,14 @@ label{
     position: absolute;
     top:85%;
     left: 63%;
-    width: 30%;
+    width: 32%;
     height: 8%;
     background: #FBC72C;
     border: none;
     border-radius: 35px;
     box-shadow: 0px 5.74143px 5.74143px rgba(0, 0, 0, 0.25);
     font-family: 'Red Hat Mono', monospace;
-    font-size: 28px;
+    font-size: larger;
     font-weight: bolder;
     text-align: center;
    
@@ -211,7 +212,7 @@ label{
     border-radius: 35px;
     box-shadow: 0px 5.74143px 5.74143px rgba(0, 0, 0, 0.25);
     font-family: 'Red Hat Mono', monospace;
-    font-size: 28px;
+    font-size: x-large;
     font-weight: bolder;
     text-align: center;
 }

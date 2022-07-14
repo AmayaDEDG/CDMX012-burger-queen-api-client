@@ -81,7 +81,7 @@ const OrderStauts = ({ orderStatus, status, orders, ordersData }) => {
               <section className={styles.menu} key={index}>
                 <h4>{item.name}</h4>
                 <h4>x{item.quantity}</h4>
-                <h4>${item.price}</h4>
+                <h4>${parseInt(item.price) * item.quantity}.00</h4>
               </section>
             )
           })}
